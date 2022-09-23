@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: red;
+}
+
+img {
+  width: 100px;
+}
+
+.second-header-2 {
+  background-color: blueviolet;
+}
+
+#the-paragraph {
+  color: aliceblue;
+}
+
+.king {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 20px;
+}
