@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello js</h1>
+
+    <script>
+      const input = "Hi, nice to see you!";
+      const vowels = ["a", "e", "i", "o", "u"];
+      const resultArray = [];
+      for (let i = 0; i < input.length; i++) {
+        if (input[i] === "e") {
+          resultArray.push(input[i]);
+        }
+        if (input[i] === "u") {
+          resultArray.push(input[i]);
+        }
+        // console.log(`i ist ${input[i]}`);
+        for (let j = 0; j < vowels.length; j++) {
+          if (input[i] === vowels[j]) {
+            resultArray.push(input[i]);
+          }
+          //   console.log(`j is ${vowels[j]}`);
+        }
+      }
+      const resultString = resultArray.join("").toUpperCase();
+
+      console.log(resultString);
+    </script>
+  </body>
+</html>
