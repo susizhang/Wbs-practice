@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello js</h1>
+
+    <script>
+      //   let fib = function (n) {
+      //     if (n == 0) {
+      //       return 0;
+      //     } else if (n <= 2) {
+      //       return 1;
+      //     }
+      //     let sum = 0;
+      //     let prev = 1;
+      //     let next = 1;
+      //     for (let i = 3; i <= n; i++) {
+      //       sum = prev + next;
+      //       prev = next;
+      //       next = sum;
+      //     }
+      //     return sum;
+      //   };
+      //   for (let i = 0; i <= 9; i++) {
+      //     console.log(fib(i));
+      //   }
+
+      const fibonacci = (n) => {
+        if (n < 2) return n;
+        return fibonacci(n - 2) + fibonacci(n - 1);
+      };
+
+      for (let i = 0; i <= 9; i++) {
+        console.log(fibonacci(i));
+      }
+    </script>
+  </body>
+</html>
