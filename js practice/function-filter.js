@@ -25,3 +25,9 @@ console.log("asdf asdf erg ar hsteh".split(" "));
 
 console.log(arr.splice(2, 2)); // 改变原arr, 返回删掉的元素数组
 console.log(arr);
+
+const numArray = [2, 5, 2, 3, 8, 3, 5];
+
+const func = (x, y) => x + y;
+const s = numArray.reduce(func, 0);
+const p = numArray.reduce((x, y) => x * y, 1);
