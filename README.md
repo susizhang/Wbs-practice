@@ -1,2 +1,2 @@
-# Wbs-practice
-Practice solutions
+# practice solutions
+Some Practice during the Bootcamp
