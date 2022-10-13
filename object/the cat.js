@@ -74,8 +74,8 @@ class Cat {
 
 const garfield = new Cat();
 
-garfield.play(4);
+garfield.play(19, 5, 3);
 garfield.fight(3);
-garfield.eat(9);
-garfield.play(10);
+garfield.eat(9, 6);
+garfield.sleep(3, 5);
 garfield.printStatus();
