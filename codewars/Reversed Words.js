@@ -5,3 +5,8 @@ function reverseWords(str) {
   // 4. Don't forget the space in " "
   return str.split(" ").reverse().join(" ");
 }
+
+// const str = "Hello! everyone. How are you?";
+
+// console.log(str.split(" "));
+// console.log(str.split(""));
