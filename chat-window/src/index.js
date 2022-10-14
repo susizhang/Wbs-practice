@@ -2,7 +2,7 @@ function addMessage(message, me = true) {
   const template = `<div class="message">
     <div class="${
       me ? "myMessage" : "fromThem"
-    }" data-date="${new Date().toLocaleTimeString()}">
+    }"  data-date="${new Date().toLocaleTimeString()}">
       <p>${message}</p>
       <date> ${new Date().toLocaleTimeString()} </date>
     </div>
@@ -31,14 +31,14 @@ addMessage("Let's go!");
 // Code here
 
 const submitBtn = document.getElementById("submitBtn");
-const chatForm = document.getElementsByClassName("chat");
 const messageInput = document.getElementById("messageInput");
 
-const submit = () => {
+const submit = (e) => {
+  e.preventDefault();
   const messageText = messageInput.value;
   const messageSubmit = addMessage(messageText);
-  chatForm.appendChild(messageSubmit);
   messageInput.value = "";
+  return messageSubmit;
 };
 
 if (submitBtn) {
@@ -53,9 +53,21 @@ if (submitBtn) {
 
 // Code here
 
+const messagesForDate = document.querySelectorAll("p");
+
+const dataDate = () => {
+  alert(new Date().toLocaleTimeString());
+};
+
+for (const message of messagesForDate) {
+  message.addEventListener("click", dataDate);
+}
+
 /**
  * Listen to every Keydown (from the keyboard) in the input and call
  * the function typing()
  */
 
 // Code here
+
+messageInput.addEventListener("keydown", typing);
