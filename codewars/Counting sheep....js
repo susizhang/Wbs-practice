@@ -5,6 +5,7 @@ function countSheeps(arrayOfSheep) {
   });
   return newArrays.length;
 }
+
 countSheeps([
   true,
   true,
@@ -31,3 +32,7 @@ countSheeps([
   true,
   true,
 ]);
+
+// function countSheeps(arrayOfSheeps) {
+//   return arrayOfSheeps.filter(Boolean).length;
+// }
